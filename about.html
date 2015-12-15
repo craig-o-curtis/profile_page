@@ -1,0 +1,399 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="About page of Craig O. Curtis">
+    <meta name="author" content="Craig O. Curtis, Web Designer and Developer">
+    <link rel="icon" href="img/favicons/github.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <link href="css/myAboutStyles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+      <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Craig O. Curtis</a>
+      <div id="navbar">
+        <nav class="nav navbar-nav pull-xs-left">
+          <a class="nav-item nav-link" href="#">Dashboard</a>
+          <a class="nav-item nav-link" href="cover.html">Cover</a>
+          <a class="nav-item nav-link" href="index.html">Profile</a>
+        </nav>
+<!--         <form class="pull-xs-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form> -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="cover.html">Cover Page</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a class="sidebar_button" data-target="#superpowers_table">Superpowers</a></li>
+            <li><a class="sidebar_button" data-target="#education_table">Education</a></li>
+            <li><a class="sidebar_button" data-target="#work_table">Work Experience</a></li>
+            <li><a class="sidebar_button" data-target="#hobbies_table">Hobbies</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">My Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder skillset" data-target="#superpowers_table">
+              <i class='fa fa-flash fa-huge text-warning'></i>
+              <h4>Superpowers</h4>
+              <span class="text-muted">Here are my skills!</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder skillset" data-target="#education_table">
+				<i class='fa fa-graduation-cap fa-huge text-success'></i>
+              <h4>Education</h4>
+              <span class="text-muted">Life-long Learner!</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder skillset" data-target="#work_table">
+              <i class='fa fa-cog fa-huge text-info'></i>
+              <h4>Work Experience</h4>
+              <span class="text-muted">Mostly in my freetime!</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder skillset" data-target="#hobbies_table">
+              <i class='fa fa-heart fa-huge text-danger'></i>
+              <h4>Hobbies</h4>
+              <span class="text-muted">I never stop learning!</span>
+            </div>
+          </div>
+
+          <!-- <h2>Craig O. Curtis Summary of Skills</h2> -->
+          <div class="table-responsive">
+          	<!-- superpowers -->
+            <table id="superpowers_table" class="table table-striped table-hover">
+              <thead>
+              	<tr class="table-inverse">
+              	  <th class="table-title table-inverse" colspan="4"><i class="fa fa-flash text-warning"></i>&nbsp;Superpowers</th>
+              	</tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <th>Skill</th>
+                  <th>Level</th>
+                  <th>Years</th>
+                  <th>Details</th>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-globe"></i>&nbsp;Mandarin Chinese</td>
+                  <td>
+					<progress class="progress progress-warning" value="10" max="10">15 years</progress>
+                  </td>
+                  <td>15 years</td>
+                  <td>B.A., DLPT5 3-3, HSK5</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-html5"></i>&nbsp;HTML5</td>
+                  <td>
+					<progress class="progress progress-warning" value="3" max="10">3 years</progress>
+                  </td>
+                  <td>3 years</td>
+                  <td>Treehouse Student</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-css3"></i>&nbsp;CSS3</td>
+                  <td>
+					<progress class="progress progress-warning" value="3" max="10">3 years</progress>
+                  </td>
+                  <td>3 years</td>
+                  <td>Treehouse Student</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-coffee"></i>&nbsp;JavaScript</td>
+                  <td>
+					<progress class="progress progress-warning" value="2" max="10">2 years</progress>
+                  </td>
+                  <td>2 years</td>
+                  <td>Treehouse Student</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-desktop"></i>&nbsp;jQuery</td>
+                  <td>
+					<progress class="progress progress-warning" value="2" max="10">2 years</progress>
+                  </td>
+                  <td>2 years</td>
+                  <td>Treehouse Student</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-twitter"></i>&nbsp;Bootstrap</td>
+                  <td>
+					<progress class="progress progress-warning" value="0.5" max="10">3 years</progress>
+                  </td>
+                  <td>3 years</td>
+                  <td>Treehouse Student</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-github-alt"></i>&nbsp;GitHub</td>
+                  <td>
+					<progress class="progress progress-warning" value="0.5" max="10">6 months</progress>
+                  </td>
+                  <td>6 months</td>
+                  <td>Treehouse Student</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Education -->
+            <table id="education_table" class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="table-title table-inverse" colspan="4"><i class="fa fa-graduation-cap text-success"></i>&nbsp;Education</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-success">
+                  <th>Institution</th>
+	              <th>Completed</th>
+	              <th>Degree</th>
+	              <th>Time</th>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-graduation-cap"></i>&nbsp;Treehouse</td>
+                  <td>
+                  	<i class="fa fa-square text-success"></i>
+                  </td>
+                  <td>Front-end Tech Degree</td>
+                  <td>2014-present</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-graduation-cap"></i>&nbsp;Yunnan Normal University</td>
+                  <td>
+                  	<i class="fa fa-check-square text-success"></i>
+                  </td>
+                  <td>Chinese Translation</td>
+                  <td>2007-2008</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-graduation-cap"></i>&nbsp;University of Minnesota</td>
+                  <td>
+                  	<i class="fa fa-check-square text-success"></i>
+                  </td>
+                  <td>B.A. Chinese</td>
+                  <td>1999-2004</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Work Experience -->
+            <table id="work_table" class="table table-striped table-hover">
+              <thead>
+                <tr class="table-inverse">
+                   <th class="table-title" colspan="4"><i class="fa fa-cog text-info"></i>&nbsp;Work Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr class="table-info">
+                  <th>Role</th>
+                  <th>Level</th>
+                  <th>Years</th>
+                  <th>Company</th>
+                </tr>
+
+                <tr>
+                  <td><i class="fa fa-globe"></i>&nbsp;Mandarin Chinese Translation</td>
+                  <td>
+					<progress class="progress progress-info" value="7" max="10">7 years</progress>
+                  </td>
+                  <td>7 years</td>
+                  <td>DoD, Powers Translation</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-bug"></i>&nbsp;QA Testing</td>
+                  <td>
+					<progress class="progress progress-info" value="4" max="10">4 years</progress>
+                  </td>
+                  <td>4 years</td>
+                  <td>Minted Sky Studios</td>
+                </tr>
+
+				<tr>
+                  <td><i class="fa fa-gamepad"></i>&nbsp;Gamification</td>
+                  <td>
+					<progress class="progress progress-info" value="4" max="10">4 years</progress>
+                  </td>
+                  <td>4 years</td>
+                  <td>Minted Sky Studios</td>
+                </tr>                
+
+                <tr>
+                  <td><i class="fa fa-user"></i>&nbsp;User Experience</td>
+                  <td>
+					<progress class="progress progress-info" value="4" max="10">4 years</progress>
+                  </td>
+                  <td>4 years</td>
+                  <td>Minted Sky Studios</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-institution"></i>&nbsp;Front-end Instruction</td>
+                  <td>
+                  	<progress class="progress progress-info" value="3" max="10">3 years</progress>
+                  </td>
+                  <td>3 years</td>
+                  <td>Shanghai Jiao Tong University</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-user-plus"></i>&nbsp;UI Design</td>
+                  <td>
+                  	<progress class="progress progress-info" value="2" max="10">2 years</progress>
+                  </td>
+                  <td>2 years</td>
+                  <td>Minted Sky Studios</td>
+                </tr>
+              </tbody>
+            </table>
+          	<!-- hobbies -->
+            <table id="hobbies_table" class="table table-striped table-hover">
+              <thead>
+              	<tr class="table-inverse">
+                   <th class="table-title table-inverse" colspan="4"><i class="fa fa-heart text-danger"></i>&nbsp;Hobbies</th>
+              	</tr>
+              </thead>
+              <tbody>
+                <tr class="table-danger">
+                  <th>Outlet</th>
+                  <th>Frequency</th>
+                  <th>Reason</th>
+                  <th><i class="fa fa-link"></i>&nbsp;Link</th>
+                </tr>
+                <!-- hobbies details -->
+                <!-- github -->
+                <tr>
+                  <td><i class="fa fa-github-square"></i>&nbsp;GitHub</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Open-source my projects!</td>
+                  <td>
+                  	<a type="button" href="http://www.github.com/craig-o-curtis" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-github-square"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- codepen -->
+                <tr>
+                  <td><i class="fa fa-codepen"></i>&nbsp;Codepen</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Stay Up-to-date!</td>
+                  <td>
+                  	<a type="button" href="http://codepen.io/craigocurtis" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-link on fa-codepen"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- stack overflow -->
+                <tr>
+                  <td><i class="fa fa-stack-overflow"></i>&nbsp;Stack Overflow</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Ask geeky questions!</td>
+                  <td>
+                  	<a type="button" href="http://stackoverflow.com/users/4915498/craig-o-curtis" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-link on fa-stack-overflow"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- stack exchange -->
+                <tr>
+                  <td><i class="fa fa-stack-exchange"></i>&nbsp;Stack Exchange</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Earn geek points!</td>
+                  <td>
+                  	<a type="button" href="http://stackexchange.com/users/6330429/craig-o-curtis" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-stack-exchange"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- reddit -->
+                <tr>
+                  <td><i class="fa fa-reddit-square"></i>&nbsp;Reddit</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Read geeky forums!</td>
+                  <td>
+                  	<a type="button" href="http://www.reddit.com" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-reddit-alien"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- hacker news -->
+                <tr>
+                  <td><i class="fa fa-hacker-news"></i>&nbsp;Hacker News</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Stay Up-to-date!</td>
+                  <td>
+                  	<a type="button" href="http://www.hackernews.com" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-link on fa-hacker-news"></i>
+                  	</a>
+                  </td>
+                </tr>
+                <!-- linkedin -->
+                <tr>
+                  <td><i class="fa fa-linkedin-square"></i>&nbsp;LinkedIn</td>
+                  <td>
+                  	<progress class="progress progress-danger" value="2" max="10"></progress>
+                  </td>
+                  <td>Share and like updates!</td>
+                  <td>
+                  	<a type="button" href="https://cn.linkedin.com/in/craigocurtis" target="_blank" class="btn btn-sm btn-danger button-link">
+						<i class="fa fa-linkedin"></i>
+                  	</a>
+                  </td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/myAbout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/* myAboutstyles.css */
+
+.table-title {
+	text-align: center;
+}
+
+.fa-huge {
+	font-size: 10rem;
+}
+
+.skillset {
+	border-radius: 20px;
+	height: 100%;
+	transition: box-shadow 1s;
+}
+
+.skillset:hover,
+.skillset:focus {
+	box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.1);
+}
+
+a.button-link {
+	display: block;
+}

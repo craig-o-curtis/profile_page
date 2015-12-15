@@ -1,0 +1,10 @@
+/* myCoverStyles.css */
+
+body {
+	background-image: url(../img/mypics/bluestream_dark.jpg);
+	background-color: rgba(0,0,0,0.7);
+	background-size: cover;
+	/*opacity: 0.7;*/
+	background-position: 100%;
+	background-attachment: fixed;
+}
